@@ -40,7 +40,6 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.AdminButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +59,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(212, 47);
             this.guna2Button2.TabIndex = 19;
             this.guna2Button2.Text = "Пройденные тесты";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // ProfileButton
             // 
@@ -76,6 +76,7 @@
             this.ProfileButton.Size = new System.Drawing.Size(147, 47);
             this.ProfileButton.TabIndex = 18;
             this.ProfileButton.Text = "Профиль";
+            this.ProfileButton.Click += new System.EventHandler(this.ProfileButton_Click);
             // 
             // guna2Button1
             // 
@@ -109,6 +110,7 @@
             this.TestsButton.Size = new System.Drawing.Size(147, 47);
             this.TestsButton.TabIndex = 16;
             this.TestsButton.Text = "Тесты";
+            this.TestsButton.Click += new System.EventHandler(this.TestsButton_Click);
             // 
             // TheoryButton
             // 
@@ -191,22 +193,6 @@
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 8;
             // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 5;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.ForestGreen;
-            this.guna2Button3.Font = new System.Drawing.Font("Poor Richard", 10F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.guna2Button3.Location = new System.Drawing.Point(180, 417);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(147, 47);
-            this.guna2Button3.TabIndex = 21;
-            this.guna2Button3.Text = "Профиль";
-            // 
             // AdminButton
             // 
             this.AdminButton.BorderRadius = 5;
@@ -231,7 +217,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(509, 636);
             this.Controls.Add(this.AdminButton);
-            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.ProfileButton);
@@ -262,7 +247,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button AdminButton;
     }
 }

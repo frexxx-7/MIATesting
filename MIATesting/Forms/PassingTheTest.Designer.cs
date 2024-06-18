@@ -1,0 +1,297 @@
+﻿namespace MIATesting.Forms
+{
+    partial class PassingTheTest
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.BackButton = new Guna.UI2.WinForms.Guna2Button();
+            this.OutputButton = new Guna.UI2.WinForms.Guna2Button();
+            this.ResLbl = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.QuestionPanel = new System.Windows.Forms.Panel();
+            this.NextButton = new Guna.UI2.WinForms.Guna2Button();
+            this.QuestionNamePanel = new System.Windows.Forms.Panel();
+            this.AOPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.HeaderLabel = new System.Windows.Forms.Label();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Panel1.SuspendLayout();
+            this.QuestionPanel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2Panel1.Controls.Add(this.guna2ControlBox3);
+            this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1132, 44);
+            this.guna2Panel1.TabIndex = 14;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Green;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1084, 9);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 7;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
+            // guna2ControlBox3
+            // 
+            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.Green;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(982, 9);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox3.TabIndex = 9;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Green;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1033, 9);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 8;
+            // 
+            // BackButton
+            // 
+            this.BackButton.BorderRadius = 5;
+            this.BackButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BackButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BackButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BackButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BackButton.FillColor = System.Drawing.Color.Green;
+            this.BackButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BackButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.BackButton.Location = new System.Drawing.Point(12, 50);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(127, 34);
+            this.BackButton.TabIndex = 34;
+            this.BackButton.Text = "Назад";
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // OutputButton
+            // 
+            this.OutputButton.BorderRadius = 5;
+            this.OutputButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.OutputButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.OutputButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.OutputButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.OutputButton.FillColor = System.Drawing.Color.Green;
+            this.OutputButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.OutputButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.OutputButton.Location = new System.Drawing.Point(900, 445);
+            this.OutputButton.Name = "OutputButton";
+            this.OutputButton.Size = new System.Drawing.Size(127, 35);
+            this.OutputButton.TabIndex = 48;
+            this.OutputButton.Text = "Вывод";
+            this.OutputButton.Visible = false;
+            this.OutputButton.Click += new System.EventHandler(this.OutputButton_Click);
+            // 
+            // ResLbl
+            // 
+            this.ResLbl.AutoSize = true;
+            this.ResLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ResLbl.Location = new System.Drawing.Point(888, 543);
+            this.ResLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ResLbl.Name = "ResLbl";
+            this.ResLbl.Size = new System.Drawing.Size(0, 25);
+            this.ResLbl.TabIndex = 47;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.Green;
+            this.label3.Location = new System.Drawing.Point(882, 513);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 25);
+            this.label3.TabIndex = 46;
+            this.label3.Text = "Результат:";
+            this.label3.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(13, 138);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 16);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Вопросы";
+            // 
+            // QuestionPanel
+            // 
+            this.QuestionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.QuestionPanel.AutoScroll = true;
+            this.QuestionPanel.Controls.Add(this.NextButton);
+            this.QuestionPanel.Controls.Add(this.QuestionNamePanel);
+            this.QuestionPanel.Controls.Add(this.AOPanel);
+            this.QuestionPanel.Location = new System.Drawing.Point(17, 157);
+            this.QuestionPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.QuestionPanel.Name = "QuestionPanel";
+            this.QuestionPanel.Size = new System.Drawing.Size(857, 441);
+            this.QuestionPanel.TabIndex = 44;
+            // 
+            // NextButton
+            // 
+            this.NextButton.BorderRadius = 5;
+            this.NextButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.NextButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.NextButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.NextButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.NextButton.FillColor = System.Drawing.Color.Green;
+            this.NextButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NextButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.NextButton.Location = new System.Drawing.Point(710, 398);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(127, 35);
+            this.NextButton.TabIndex = 34;
+            this.NextButton.Text = "Следующий";
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
+            // QuestionNamePanel
+            // 
+            this.QuestionNamePanel.AutoScroll = true;
+            this.QuestionNamePanel.Location = new System.Drawing.Point(16, 16);
+            this.QuestionNamePanel.Margin = new System.Windows.Forms.Padding(4);
+            this.QuestionNamePanel.Name = "QuestionNamePanel";
+            this.QuestionNamePanel.Size = new System.Drawing.Size(817, 71);
+            this.QuestionNamePanel.TabIndex = 7;
+            // 
+            // AOPanel
+            // 
+            this.AOPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AOPanel.AutoScroll = true;
+            this.AOPanel.Location = new System.Drawing.Point(16, 154);
+            this.AOPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.AOPanel.Name = "AOPanel";
+            this.AOPanel.Size = new System.Drawing.Size(821, 226);
+            this.AOPanel.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(13, 109);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 20);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Заголовок:";
+            // 
+            // HeaderLabel
+            // 
+            this.HeaderLabel.AutoSize = true;
+            this.HeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HeaderLabel.ForeColor = System.Drawing.Color.Green;
+            this.HeaderLabel.Location = new System.Drawing.Point(145, 109);
+            this.HeaderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HeaderLabel.Name = "HeaderLabel";
+            this.HeaderLabel.Size = new System.Drawing.Size(98, 20);
+            this.HeaderLabel.TabIndex = 42;
+            this.HeaderLabel.Text = "Заголовок";
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockForm = true;
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.guna2Panel1;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // PassingTheTest
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1132, 669);
+            this.Controls.Add(this.OutputButton);
+            this.Controls.Add(this.ResLbl);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.QuestionPanel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.HeaderLabel);
+            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this.guna2Panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "PassingTheTest";
+            this.Text = "PassingTheTest";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PassingTheTest_Load);
+            this.guna2Panel1.ResumeLayout(false);
+            this.QuestionPanel.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2Button BackButton;
+        private Guna.UI2.WinForms.Guna2Button OutputButton;
+        private System.Windows.Forms.Label ResLbl;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel QuestionPanel;
+        private Guna.UI2.WinForms.Guna2Button NextButton;
+        private System.Windows.Forms.Panel QuestionNamePanel;
+        private System.Windows.Forms.Panel AOPanel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label HeaderLabel;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+    }
+}

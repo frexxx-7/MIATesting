@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -57,6 +56,7 @@
             this.AddQuestionButton = new Guna.UI2.WinForms.Guna2Button();
             this.NextButton = new Guna.UI2.WinForms.Guna2Button();
             this.CanceledButton = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             this.CreateTestPanel.SuspendLayout();
             this.Page1Panel.SuspendLayout();
@@ -65,11 +65,6 @@
             this.Page3Panel.SuspendLayout();
             this.QuestionPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 20;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // guna2Panel1
             // 
@@ -462,6 +457,13 @@
             this.CanceledButton.Text = "Отмена";
             this.CanceledButton.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockForm = true;
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.guna2Panel1;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // AddTests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -476,6 +478,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddTests";
             this.Text = "AddTest";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AddTests_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.CreateTestPanel.ResumeLayout(false);
@@ -493,8 +496,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
@@ -522,5 +523,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button NextButton;
         private Guna.UI2.WinForms.Guna2Button CanceledButton;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

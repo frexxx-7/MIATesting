@@ -41,5 +41,23 @@ namespace MIATesting.Forms
         {
             new AdminPanel(id).Show();
         }
+
+        private void TestsButton_Click(object sender, EventArgs e)
+        {
+            new Tests(id).Show();
+            this.Close();
+        }
+
+        private void ProfileButton_Click(object sender, EventArgs e)
+        {
+            new Profile(id).Show();
+            this.Close();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            new PassedTheTest(id).Show();
+            this.Close();
+        }
     }
 }
