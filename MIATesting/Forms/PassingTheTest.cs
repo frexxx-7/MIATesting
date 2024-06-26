@@ -277,9 +277,30 @@ namespace MIATesting.Forms
             }
             return result;
         }
+        private string fioUser;
+        private void loadInfoUser()
+        {
+            DB db = new DB();
+            string queryInfo = $"SELECT users.login, additionalinfouser.age,  concat(additionalinfouser.name, ' ', additionalinfouser.patronymic, ' ', additionalinfouser.surname) as FIO , concat(address.house, ' ', address.street, ' ', address.city, ' ', address.country) as addressInfo FROM users " +
+                $"left join additionalinfouser on users.idAdditionalInfoUser = additionalinfouser.id " +
+                $"left join address on additionalinfouser.idAddress = address.id " +
+                $"WHERE users.id = '{Forms.Menu.idUser}'";
+            MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
 
+            db.openConnection();
+
+            MySqlDataReader reader = mySqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                fioUser = reader["FIO"].ToString() != "" ? reader["FIO"].ToString() : "Не указано";
+            }
+            reader.Close();
+
+            db.closeConnection();
+        }
         private void OutputButton_Click(object sender, EventArgs e)
         {
+            loadInfoUser();
             Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
 
             Document sourceDoc = wordApp.Documents.Open(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Шаблон.docx"));
@@ -294,6 +315,7 @@ namespace MIATesting.Forms
             FillBookmark(targetDoc, "Результат", result.ToString());
             FillBookmark(targetDoc, "Тест", textTest);
             FillBookmark(targetDoc, "Ответы", answers);
+            FillBookmark(targetDoc, "ФИО", fioUser);
 
             SaveFileDialog saveFileDialog1 = new SaveFileDialog
             {

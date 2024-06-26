@@ -13,11 +13,13 @@ namespace MIATesting.Forms
     public partial class Menu : Form
     {
         public static string login;
+        public static string idUser;
         private string id;
         public Menu(string id)
         {
             InitializeComponent();
             this.id = id;
+            Forms.Menu.idUser = id;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

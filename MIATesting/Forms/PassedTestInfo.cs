@@ -20,6 +20,7 @@ namespace MIATesting.Forms
         private string header, result, idTest;
         private string textTest;
         private string answers;
+        private string fioUser;
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
@@ -29,8 +30,28 @@ namespace MIATesting.Forms
         private void PassedTestInfo_Load(object sender, EventArgs e)
         {
             loadTestInfo();
+            loadInfoUser();
         }
+        private void loadInfoUser()
+        {
+            DB db = new DB();
+            string queryInfo = $"SELECT users.login, additionalinfouser.age,  concat(additionalinfouser.name, ' ', additionalinfouser.patronymic, ' ', additionalinfouser.surname) as FIO , concat(address.house, ' ', address.street, ' ', address.city, ' ', address.country) as addressInfo FROM users " +
+                $"left join additionalinfouser on users.idAdditionalInfoUser = additionalinfouser.id " +
+                $"left join address on additionalinfouser.idAddress = address.id " +
+                $"WHERE users.id = '{Forms.Menu.idUser}'";
+            MySqlCommand mySqlCommand = new MySqlCommand(queryInfo, db.getConnection());
 
+            db.openConnection();
+
+            MySqlDataReader reader = mySqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                fioUser = reader["FIO"].ToString() != "" ? reader["FIO"].ToString() : "Не указано";
+            }
+            reader.Close();
+
+            db.closeConnection();
+        }
         private void OutputButton_Click(object sender, EventArgs e)
         {
             Microsoft.Office.Interop.Word.Application wordApp = new Microsoft.Office.Interop.Word.Application();
@@ -51,6 +72,7 @@ namespace MIATesting.Forms
             FillBookmark(targetDoc, "Результат", result);
             FillBookmark(targetDoc, "Тест", textTest);
             FillBookmark(targetDoc, "Ответы", answers);
+            FillBookmark(targetDoc, "ФИО", fioUser);
 
             // Show SaveFileDialog to get the save path from the user
             SaveFileDialog saveFileDialog1 = new SaveFileDialog
